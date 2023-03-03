@@ -24,15 +24,15 @@ main h1 {
     text-align: left;
 }
 .container {
-    margin: left;
+    margin: top left;
     text-align: left;
     width: fit-content;
-    
 }
 
 p{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
+    font-weight: 500;
 }
 a{
     text-decoration: underline;

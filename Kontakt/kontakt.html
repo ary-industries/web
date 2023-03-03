@@ -38,47 +38,69 @@
 
 
 <main>
-        
-    <div class="container">
-        <h1>Kontakt</h1>
+
+<table>
+<tr>
+
+<td>
+
+<form id="my-form"> 
+    
+    <h1>Kontaktní Formulář</h1>
+
+    <div>
+      <label for="name">Jméno:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="email">Kontaktní email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="zakazka">Druh zakázky:</label>
+      <select id="zakazka" name="zakazka">
+        <option value="" disabled selected required>⬇ Vyberte druh zakázky ⬇</option>
+        <option value="3D modelování">3D modelování</option>
+        <option value="3D tisk + 3D modelování">3D tisk + 3D modelování</option>
+        <option value="3D tisk">3D tisk</option>
+        <option value="Ostatní">Ostatní</option>
+      </select>
+    </div>
+    <div>
+      <label for="nápad">Váš nápad:</label>
+      <textarea id="nápad" name="nápad" required></textarea>
+    </div>
+    <button type="submit">Odeslat</button>
+  </form>
+
+</td>
+
+<td>
+
+<div class="container">
+    <h1>Kontakt</h1>
+    <br>
+    <p>
+        <b>Email:</b> <a href="mailto:adamrykl.business@gmail.com">adamrykl.business@gmail.com</a>
         <br>
-        <p>
-            <b>Email:</b> <a href="mailto:adamrykl.business@gmail.com">adamrykl.business@gmail.com</a>
-            <br>
-            <b>Instagram:</b> <a target="_blank" href="https://www.instagram.com/ary_industries/" rel="noreferrer noopener"> @ary_industries</a>
+        <b>Instagram:</b> <a target="_blank" href="https://www.instagram.com/ary_industries/" rel="noreferrer noopener"> @ary_industries</a>
             <br><br>
-            <i>Telefonní číslo zašlu jen ověřeným lidem (z důvodu spamu) přes email  děkuji za pochopení.</i>
+        <i>Telefonní číslo zašlu jen ověřeným lidem (z důvodu spamu) přes email  děkuji za pochopení.</i>
 
-        </p>
-    </div><br>
+    </p>
+</div>
 
-    <h1>Kontaktní formulář</h1>
+</td>
 
-    <form id="my-form">
-  <div>
-    <label for="name">Jméno:</label>
-    <input type="text" id="name" name="name" required>
-  </div>
-  <div>
-    <label for="email">Kontaktní email:</label>
-    <input type="email" id="email" name="email" required>
-  </div>
-  <div>
-    <label for="zakazka">Druh zakázky:</label>
-    <select id="zakazka" name="zakazka">
-      <option value="" disabled selected>Vyberte druh zakázky</option>
-      <option value="3D modelování">3D modelování</option>
-      <option value="3D tisk + 3D modelování">3D tisk + 3D modelování</option>
-      <option value="3D tisk">3D tisk</option>
-    </select>
-    <button type="button" id="clear-zakazka">Vymazat</button>
-  </div>
-  <div>
-    <label for="nápad">Váš nápad:</label>
-    <textarea id="nápad" name="nápad" required></textarea>
-  </div>
-  <button type="submit">Odeslat</button>
-</form>
+</tr>
+</table>
+        
+
+<br>     
+
+
+  
+      
 
 </main>
 
