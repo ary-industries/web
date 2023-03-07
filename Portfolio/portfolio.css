@@ -1,1 +1,17 @@
-﻿
+﻿td{
+    width: 400px;
+    padding: 10px;
+}
+
+#portfolio img{
+    border: 6px solid white;
+    border-radius: 20px;
+    width: inherit;
+    transition: 0.3s;
+}
+#portfolio img:hover{
+    border: 6px solid black;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
