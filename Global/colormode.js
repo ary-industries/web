@@ -1,20 +1,3 @@
-/*
-const colorModeBtn = document.getElementById('color-mode-btn');
-const originalText = colorModeBtn.textContent;
-
-colorModeBtn.addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
-
-    if (colorModeBtn.textContent === originalText) {
-        colorModeBtn.textContent = 'Light Theme';
-      } else {
-        colorModeBtn.textContent = originalText;
-      }
-
-    
-});
-
-*/
 const colorModeBtn = document.getElementById('color-mode-btn');
 const body = document.body;
 const originalText = colorModeBtn.textContent;
