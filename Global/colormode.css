@@ -1,24 +1,24 @@
-.dark-mode {
-    background-color: rgb(40, 40, 40);
-    color: rgb(255, 255, 255);
-    transition: 0.5s;
+.light-mode {
+    background-color: white;
 }
 
-/*
-.dark-mode header {
-    transition: 0.5s;
-}
-*/
 
-.dark-mode nav ul li a {
-    color: rgb(255, 255, 255);
-    transition: 0.5s;
+
+.light-mode header li:hover{
+    background-color: white;
+    color: black;
 }
 
-.dark-mode #color-mode-btn{
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    border: 6px solid  rgb(0, 0, 0);
-    transition: 0.5s;
+
+/*  Color mode  */
+
+.light-mode #color-mode-btn, .light-mode #dropdown-color-mode-btn{
+    background-color: white;
+    color: black;
+}
+
+.light-mode #color-mode-btn:hover, .light-mode #dropdown-color-mode-btn:hover{
+    background-color: black;
+    color: white;
 }
 

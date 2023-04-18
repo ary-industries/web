@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;  
+    color: white;
+    background-color: rgb(20, 20, 20);
+}
+
+/*Button styling */
+
+#bars, #x{
+    font-size: 25px;
+    display: none;
+}
+
+header img{
+    height: 50px;
+}
+
+header ul{
+    padding: 0;
+    
+}
+header a{
+    color: inherit;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    padding: 0 5px;
+}
+
+header li{
+    padding: 6px 0;
+    background-color: inherit;
+    border-radius: 15px;
+    min-width: 125px;
+    transition: all 0.3s;
+
+    /*  font  */
+    text-align: center;
+    color: inherit;
+    font-family: inherit;
+}
+header li:hover{
+    transform: scale(1.05);
+    transition: all 0.3s;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+/*  Color mode  */
+
+#color-mode-btn, #dropdown-color-mode-btn{
+    padding: 6px 0;
+    border-radius: 1rem;
+    /*border: solid 3px rgb(0, 0, 0);*/
+    background-color: rgb(0, 0, 0);
+    color: inherit;
+    transition: all 0.3s;
+    min-width: 125px;
+
+    /*  font  */
+    text-align: center;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+#color-mode-btn:hover, #dropdown-color-mode-btn:hover{
+    transform: scale(1.05);
+    transition: all 0.3s;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}

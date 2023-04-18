@@ -1,52 +1,178 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
+*{
     padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: rgb(0, 0, 0);
-    transition: 0.5s;
-    line-height: 1.6;
-    letter-spacing: 1px;
-   
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+body{
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-size: 10px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    display: flex;
 }
 
-main {
-    width: 85%;
-    margin: auto;
-    padding-top: 120px;  
+h1{
+    text-transform: uppercase;
 }
 
-main h1 {
-    text-align: left;
+#logo{
+    height: 70px;
+    rotate: -45deg;
 }
-.container {
-    margin: top left;
-    text-align: left;
-    width: fit-content;
-}
-
-p{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-    font-weight: 500;
-}
-a{
-    text-decoration: underline;
-    color: inherit;
+#navbar h1{
+    margin-right: auto;
+    margin-left: 20px;
 }
 
-hr{
-    width: 100%;
+#color-mode-btn, #dropdown-color-mode-btn{
+    padding: 6px 0;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
     
-    border: 3px solid rgb(0, 130, 255);
+    min-width: 130px;
+    font-weight: inherit;
+    font-size: inherit;
+    transition: all 0.3s;
 }
-.HR2{
-    border: 3px solid rgb(130,0,255);
+
+#color-mode-btn:hover, #dropdown-color-mode-btn{
+    transform: scale(1.05);
+    transition: all 0.3s;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
-.right{
-    text-align: right;
+
+/*                          Navbar                  */ 
+
+header{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    position: fixed;
+    height: 70px;
+    background-color: rgb(0, 150, 255);
+    width: 100%;
+    display: inline-block;
+    font-size: 1.6em;
+    color: white;
 }
+#navbar{
+    height: inherit;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: inherit;
+}
+
+header a{
+    color: inherit;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    padding: 0 10px;
+}
+
+header li{
+    padding: 6px 0;
+    background-color: inherit;
+    border-radius: 10px;
+    min-width: 130px;
+    transition: all 0.3s;
+
+    /*  font  */
+    text-align: center;
+    color: inherit;
+    font-family: inherit;
+
+}
+header li:hover{
+    transform: scale(1.05);
+    transition: all 0.3s;
+
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#dropdown, #normal, #bars{
+    display: none;
+    
+}
+
+/*                  Normal                      */
+
+#normal, #normal ul{
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+
+}
+
+/*                  Dropdown                      */
+
+#dropdown{ 
+    background-color: inherit;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    margin-left: auto;
+    border-radius: 0 0 10px 10px;
+    transition: 0.3s;
+}
+
+@media (max-width:996px) {
+    #normal{
+        display: none;
+
+    }
+    #dropdown {
+        display: none;
+        width: 50%;
+      }
+
+    #bars{
+        display: flex;
+    }
+
+}
+
+@media (max-width:550px) {
+    #dropdown{
+        width: 100%;
+    }
+}
+
+@media (min-width: 996px) {
+    #dropdown{
+        display: none !important;
+    }
+}
+  
+/*                      Color mode                      */
+
+.light-mode{
+  background-color: white;
+  color: black;
+}
+
+.light-mode #color-mode-btn, .light-mode #dropdown-color-mode-btn{
+    background-color: white;
+    color: black;
+}
+
+.light-mode #color-mode-btn:hover, .light-mode #dropdown-color-mode-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+#dropdown.show {
+  display: block;
+  transition: 0.3s;
+}
+

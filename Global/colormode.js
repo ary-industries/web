@@ -1,29 +1,58 @@
-const colorModeBtn = document.getElementById('color-mode-btn');
+const basicColorModeBtn = document.getElementById('color-mode-btn');
+const dropdownColorModeBtn = document.getElementById('dropdown-color-mode-btn');
 const body = document.body;
-const originalText = colorModeBtn.textContent;
+let lightText = 'Dark Mode';
+let darkText = 'Light Mode';
+let currentMode = localStorage.getItem('colorMode');
+let originalText;
 
-// Check if color mode preference is saved in localStorage
-if (localStorage.getItem('colorMode') === 'dark') {
-  body.classList.add('dark-mode');
-  colorModeBtn.textContent = 'Light Theme';
+// Set the initial mode and text content of the color mode button
+if (currentMode === 'light') {
+  body.classList.add('light-mode');
+  originalText = darkText;
+  basicColorModeBtn.textContent = darkText;
+  dropdownColorModeBtn.textContent = darkText;
+} else {
+  originalText = lightText;
+  basicColorModeBtn.textContent = lightText;
+  dropdownColorModeBtn.textContent = lightText;
 }
 
-// Add event listener to color mode button
-colorModeBtn.addEventListener('click', function() {
-  // Toggle the dark-mode class on the body element
-  body.classList.toggle('dark-mode');
+// Add event listener to color mode buttons
+basicColorModeBtn.addEventListener('click', toggleColorMode);
+dropdownColorModeBtn.addEventListener('click', toggleColorMode);
 
-  // Update the text content of the color mode button
-  if (colorModeBtn.textContent === originalText) {
-    colorModeBtn.textContent = 'Light Theme';
+// Function to toggle the color mode
+function toggleColorMode() {
+  // Toggle the light-mode class on the body element
+  body.classList.toggle('light-mode');
+
+  // Update the text content of the color mode buttons
+  if (body.classList.contains('light-mode')) {
+    basicColorModeBtn.textContent = darkText;
+    dropdownColorModeBtn.textContent = darkText;
   } else {
-    colorModeBtn.textContent = originalText;
+    basicColorModeBtn.textContent = lightText;
+    dropdownColorModeBtn.textContent = lightText;
   }
 
   // Save the color mode preference in localStorage
-  if (body.classList.contains('dark-mode')) {
-    localStorage.setItem('colorMode', 'dark');
-  } else {
+  if (body.classList.contains('light-mode')) {
     localStorage.setItem('colorMode', 'light');
+  } else {
+    localStorage.setItem('colorMode', 'dark');
   }
+}
+
+
+
+
+//                    Click
+
+const bars = document.querySelector('#bars');
+const dropdown = document.querySelector('#dropdown');
+
+bars.addEventListener('click', () => {
+  dropdown.classList.toggle('show');
 });
+
