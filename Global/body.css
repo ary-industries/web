@@ -100,7 +100,7 @@ header li:hover{
     color: black;
 }
 
-#dropdown, #normal, #bars{
+#dropdown, #normal, #bars, #x{
     display: none;
     
 }
@@ -171,8 +171,11 @@ header li:hover{
     color: white;
 }
 
-#dropdown.show {
+#dropdown.show, #x.show {
   display: block;
   transition: 0.3s;
+}
+#bars.show{
+    display:none;
 }
 
