@@ -49,10 +49,8 @@ function toggleColorMode() {
 
 //                    Click
 
-const bars = document.querySelector('#bars');
-const dropdown = document.querySelector('#dropdown');
+const bars = document.querySelector('#click');
 
 bars.addEventListener('click', () => {
-  dropdown.classList.toggle('show');
+  body.classList.toggle('show');
 });
-
