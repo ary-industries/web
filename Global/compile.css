@@ -12,6 +12,7 @@ body {
     font-weight: bold;  
     color: white;
     background-color: rgb(20, 20, 20);
+    min-height: 100vh;
 }      
 
 
@@ -69,6 +70,10 @@ header li:hover{
     transition: all 0.3s;
     background-color: rgb(255, 255, 255);
     color: black;
+}
+
+i{
+    font-size: 20px;
 }
 
 #bars, #x{
@@ -170,12 +175,12 @@ header li:hover{
 }
 
 @media (min-width: 800px) {
-    #dropdown{
+    #dropdown, #x, #bars{
         display: none !important;
     }
 }
 
-
+ 
 
 
 .show #dropdown, .show #x{
@@ -185,4 +190,17 @@ header li:hover{
 
 .show #bars{
     display: none;
+}
+
+
+/***********************FOOTER*************************/
+
+footer{
+    display: flex;
+    padding: 20px;
+    background-color: black;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
