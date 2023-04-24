@@ -180,6 +180,12 @@ i{
     }
 }
 
+@media (max-height: 500px){
+    footer{
+        margin-top: 500px;
+    }
+}
+
  
 
 
