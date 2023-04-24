@@ -206,7 +206,7 @@ footer{
     padding: 20px;
     background-color: rgb(124, 72, 72);
     height: 100px;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
