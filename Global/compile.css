@@ -73,7 +73,7 @@ header li:hover{
 }
 
 i{
-    font-size: 20px;
+    font-size: 30px;
 }
 
 #bars, #x{
@@ -200,7 +200,14 @@ footer{
     padding: 20px;
     background-color: black;
     height: 100px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
+}
+
+.mainfoot{
+    width: 25%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
 }
