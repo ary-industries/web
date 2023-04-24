@@ -198,7 +198,7 @@ i{
 footer{
     display: flex;
     padding: 20px;
-    background-color: black;
+    background-color: rgb(124, 72, 72);
     height: 100px;
     position: relative;
     bottom: 0;
