@@ -138,8 +138,9 @@ i{
 }
 /*          Color Mode          */ 
 
-.light-mode {
+.light-mode{
     background-color: white;
+    color: black;
 }
 
 .light-mode header li:hover{
