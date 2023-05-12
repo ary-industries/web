@@ -48,6 +48,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
+    color: white !important;
 }
 
 header img{
@@ -167,7 +168,7 @@ i{
 }
 
 
-@media (max-width:800px) {
+@media (max-width:850px) {
     #dropdown{
         display: none;
         flex-direction: column;
@@ -188,7 +189,7 @@ i{
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 850px) {
     #dropdown, #x, #bars{
         display: none !important;
     }
