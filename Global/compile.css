@@ -13,7 +13,7 @@ body {
     color: white;
     background-color: rgb(20, 20, 20);
     min-height: 100vh;
-    transition: 0.3s;
+    transition: 0.1s;
 }      
 
 main{
@@ -149,7 +149,7 @@ i{
 .light-mode{
     background-color: white;
     color: black;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 .light-mode header li:hover{
